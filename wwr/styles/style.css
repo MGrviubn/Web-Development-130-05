@@ -42,12 +42,12 @@ Colors
 
 #hero-img {
     width: 100%;
-    grid-column: 2/3;
-    grid-row: 1/2;
 }
 
 #hero-msg {
     margin-top: 100px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -95,7 +95,7 @@ body  {
 .card-img {
     border: 10px solid #b497d6;
     transition: transform .5s;
-    box-shadow: 5px 5px 10px #474056
+    box-shadow: 5px 5px 10px #474056;
 }
 
 .card-img:hover {
@@ -154,7 +154,7 @@ header  {
     text-align: center;
     background-color: #8a95a5;
     display: grid;
-    Grid-template-columns: 150px auto;
+    grid-template-columns: 150px auto;
 }
 
 .home-grid {
