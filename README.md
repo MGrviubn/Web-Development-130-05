@@ -13,3 +13,5 @@ https://mgrviubn.github.io/Web-Development-130-05/wdd130/wwr/site-plan-rafting.h
 Home Page - White Water Rafting<br>
 https://mgrviubn.github.io/Web-Development-130-05/wdd130/wwr/index.html<br><br>
 
+Prophet Card<br>
+https://mgrviubn.github.io/Web-Development-130-05/wdd130/wwr/prophet_card.html<br><br>
