@@ -11,5 +11,5 @@ Site Plan<br>
 https://mgrviubn.github.io/Web-Development-130-05/wdd130/wwr/site-plan-rafting.html<br><br>
 
 Home Page - White Water Rafting<br>
-https://mgrviubn.github.io/Web-Development-130-05wdd130/wdd130/wwr/index.html<br><br>
+https://mgrviubn.github.io/Web-Development-130-05/wdd130/wwr/index.html<br><br>
 
