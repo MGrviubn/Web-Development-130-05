@@ -15,3 +15,6 @@ https://mgrviubn.github.io/Web-Development-130-05/wdd130/wwr/index.html<br><br>
 
 Prophet Card<br>
 https://mgrviubn.github.io/Web-Development-130-05/wdd130/ice/prophet_card.html<br><br>
+
+Favorite Devotionals<br>
+https://mgrviubn.github.io/Web-Development-130-05/wdd130/ice/favorite_devo/favdevo.html<br><br>
