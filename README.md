@@ -18,3 +18,6 @@ https://mgrviubn.github.io/Web-Development-130-05/wdd130/ice/prophet_card.html<b
 
 Favorite Devotionals<br>
 https://mgrviubn.github.io/Web-Development-130-05/wdd130/ice/favorite_devo/favdevo.html<br><br>
+
+Halloween!<br>
+https://mgrviubn.github.io/Web-Development-130-05/wdd130/ice/halloween/index.html<br><br>
