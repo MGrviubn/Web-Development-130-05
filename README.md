@@ -24,3 +24,6 @@ https://mgrviubn.github.io/Web-Development-130-05/wdd130/ice/favorite_devo/favde
 
 Halloween!<br>
 https://mgrviubn.github.io/Web-Development-130-05/wdd130/ice/halloween/index.html<br><br>
+
+Positioning<br>
+https://mgrviubn.github.io/Web-Development-130-05/wdd130/ice/positioning/positioning.html<br><br>
