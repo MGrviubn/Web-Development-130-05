@@ -27,3 +27,6 @@ https://mgrviubn.github.io/Web-Development-130-05/wdd130/ice/halloween/index.htm
 
 Positioning<br>
 https://mgrviubn.github.io/Web-Development-130-05/wdd130/ice/positioning/positioning.html<br><br>
+
+Country Flags<br>
+https://mgrviubn.github.io/Web-Development-130-05/wdd130/ice/grid_flags/flags.html<br><br>
