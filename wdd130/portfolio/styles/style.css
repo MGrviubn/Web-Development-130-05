@@ -74,10 +74,70 @@ body > header > nav a:focus-visible {
     text-decoration: underline;
 }
 
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+}
+
+.home-grid > section {
+    min-width: 0;
+}
+
+#about-me,
+#project-overview,
+#contact {
+    grid-column: 1 / -1;
+}
+
+#contact form {
+    display: grid;
+    gap: 12px;
+    max-width: 600px;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+    width: 100%;
+    padding: 12px;
+    font: inherit;
+    border: 1px solid var(--color-muted);
+    border-radius: 4px;
+}
+
+#contact input,
+#contact textarea {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+#contact textarea {
+    resize: vertical;
+}
+
+#contact button {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+body > footer {
+    padding: 24px 120px 24px 24px;
+    background-color: var(--color-primary);
+    background-image: url("../images/GravinaLogo640x640.png");
+    background-repeat: no-repeat;
+    background-position: right 24px top 24px;
+    background-size: 64px;
+}
+
 @media (max-width: 600px) {
     body > header > nav {
         width: 100%;
         margin-left: 0;
         gap: 16px;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
     }
 }
