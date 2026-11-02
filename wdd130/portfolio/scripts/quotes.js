@@ -137,7 +137,7 @@ const quotes = [
         "credit": "Graham McNeill"
     },
     {
-        "text": "It is not simplicity, Ahzek … It is clarity of purpose.",
+        "text": "It is not simplicity, … It is clarity of purpose.",
         "author": "Magnus the Red",
         "work": "A Thousand Sons",
         "credit": "Graham McNeill",
