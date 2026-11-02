@@ -142,6 +142,12 @@ const quotes = [
         "work": "A Thousand Sons",
         "credit": "Graham McNeill",
         "note": "The ellipsis omits intervening narration."
+    },
+    {
+        "text": "Wicked phenomenon, yes? But, you know, it’s not any more \"evil\" than, say… fire. It all depends on your point of view. Try to get a better understanding of things before you make your judgement.",
+        "author": "Khan",
+        "work": "Metro 2033 (video game)",
+        "credit": "“Anomaly” level"
     }
 ];
 
@@ -153,19 +159,8 @@ const quoteNote = document.querySelector("#quote-note");
 const quoteHeading = document.querySelector("#quote-heading");
 const nextQuoteButton = document.querySelector("#next-quote");
 
-// Derive a day number from the visitor's local calendar date.
-// UTC arithmetic keeps daylight-saving changes from shifting the sequence.
-const today = new Date();
-const dayNumber = Math.floor(
-    Date.UTC(
-        today.getFullYear(),
-        today.getMonth(),
-        today.getDate()
-    ) / 86400000
-);
-
-const dailyQuoteIndex = dayNumber % quotes.length;
-let quoteIndex = dailyQuoteIndex;
+// There is no current quote until the first random selection.
+let quoteIndex = -1;
 
 function showQuote() {
     const quote = quotes[quoteIndex];
@@ -176,15 +171,23 @@ function showQuote() {
     quoteCredit.textContent = quote.credit ? ", " + quote.credit : "";
     quoteNote.textContent = quote.note || "";
     quoteNote.hidden = !quote.note;
-    quoteHeading.textContent = quoteIndex === dailyQuoteIndex
-        ? "Quote of the Day"
-        : "Featured Quote";
+    quoteHeading.textContent = "Featured Quote";
 }
 
-nextQuoteButton.addEventListener("click", function () {
-    quoteIndex = (quoteIndex + 1) % quotes.length;
-    showQuote();
-});
+function showRandomQuote() {
+    let randomIndex;
 
-showQuote();
+    // Pick again if the result matches the quote currently on screen.
+    do {
+        randomIndex = Math.floor(Math.random() * quotes.length);
+    } while (quotes.length > 1 && randomIndex === quoteIndex);
+
+    quoteIndex = randomIndex;
+    showQuote();
+}
+
+nextQuoteButton.addEventListener("click", showRandomQuote);
+
+// Choose a random quote whenever the homepage loads.
+showRandomQuote();
 nextQuoteButton.hidden = false;
